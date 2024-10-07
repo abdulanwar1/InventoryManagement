@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Addpart">
+   <children>
+      <Label layoutX="20.0" layoutY="16.0" text="Add Part">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="InHouseRBtn" layoutX="110.0" layoutY="30.0" mnemonicParsing="false" onAction="#InHouseRBtn" selected="true" text="In House">
+         <toggleGroup>
+            <ToggleGroup fx:id="rdbGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="OutsourcedRBtn" layoutX="220.0" layoutY="18.0" mnemonicParsing="false" onAction="#OutsourcedRBtn" text="Outsourced" toggleGroup="$rdbGroup" />
+      <Label layoutX="16.0" layoutY="71.0" text="ID" />
+      <Label layoutX="16.0" layoutY="107.0" text="Name" />
+      <Label layoutX="16.0" layoutY="143.0" text="Inv" />
+      <Label layoutX="16.0" layoutY="179.0" text="Price/Cost" />
+      <Label layoutX="300.0" layoutY="2220.0" text="Min" />
+      <Label layoutX="12.0" layoutY="220.0" text="Max" />
+      <TextField fx:id="IDField" disable="true" editable="false" layoutX="118.0" layoutY="67.0" promptText="ID" />
+      <TextField fx:id="NameField" layoutX="120.0" layoutY="105.0" promptText="Name" />
+      <TextField fx:id="InventoryField" layoutX="120.0" layoutY="140.0" promptText="Inventory" />
+      <TextField fx:id="PriceField" layoutX="120.0" layoutY="180.0" promptText="Price or Cost" />
+      <TextField fx:id="MinField" layoutX="370.0" layoutY="210.0" promptText="Minimum Inventory" />
+      <TextField fx:id="MaxField" layoutX="120.0" layoutY="220.0" promptText="Maximum Inventory" />
+      <Button layoutX="202.0" layoutY="322.0" mnemonicParsing="false" onAction="#SaveClick" style="-fx-background-color: DarkGrey;" text="Save" />
+      <Button layoutX="258.0" layoutY="322.0" mnemonicParsing="false" onAction="#CancelClick" style="-fx-background-color: DarkGrey;" text="Cancel" />
+      <TextField fx:id="DAddField" layoutX="122.0" layoutY="266.0" />
+      <Label fx:id="AddLabel" layoutX="16.0" layoutY="271.0" text="Machine ID" />
+      <Label layoutX="335.0" layoutY="215.0" text="Min" />
+
+   </children>
+</AnchorPane>
